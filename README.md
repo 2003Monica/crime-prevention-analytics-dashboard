@@ -4,13 +4,15 @@
 
 <img src="docs/images/01-executive-overview.png" alt="Executive Overview page of the Simcoe County crime prevention dashboard" width="100%">
 
-> **Portfolio case study:** Historical open-data analysis for exploratory decision support. Values shown in screenshots depend on the selected year and filters; they are not fixed benchmarks.
+> **Portfolio case study:** Interactive analysis built from official Statistics Canada public data. Values shown in screenshots depend on the selected year and filters; they are not fixed benchmarks.
 
 ## Project overview
 
-This project transforms historical Ontario crime data from 1998–2024 into an interactive decision-support dashboard. It brings together incidents, population-normalized crime rates, charged and unfounded indicators where applicable, crime categories, geographic variation, regional benchmarks, long-term change, and hotspot signals to identify areas that may warrant further crime-prevention analysis.
+Ontario Crime Prevention Analysis is an interactive Power BI project designed to explore historical police-reported crime patterns and support evidence-based crime-prevention planning. It analyzes Statistics Canada data across Ontario police-service jurisdictions, with a primary focus on Simcoe County.
 
-The report focuses on Simcoe County while retaining selected Ontario regions as context. It is a historical analytical tool—not a real-time policing system or automated decision engine.
+The dashboard examines how crime rates, incident volumes, violation categories, clearance-related indicators, and long-term trends vary across communities and over time. Regional comparisons benchmark Simcoe County against selected Ontario regions and broader provincial measures, providing context for local results.
+
+Power BI, Power Query, DAX, data modelling, and GIS-based visualization transform the historical data into an interactive decision-support experience spanning executive KPIs, community analysis, violation drill-down, hotspot detection, three-year change, moving-average trends, rankings, filters, and tooltips.
 
 ## Business and analytical questions
 
@@ -95,15 +97,29 @@ Open/public crime data → Data preparation → Power BI data model → DAX meas
 - Interactive filtering, cross-filtering, and tooltips
 - GIS maps and prevention-oriented analytical storytelling
 
-## Data and responsible use
+## Data Sources
 
-**Data source:** Public/open Ontario crime data.
+This project uses publicly available police-reported crime data from Statistics Canada.
 
-The analysis uses historical public data. The source URL is not embedded in this repository, so no unverified dataset link is provided.
+### Statistics Canada Table 35-10-0180-01
 
-The results should be interpreted in geographic, demographic, reporting, and policy context. A higher recorded crime rate does not explain why crime occurs or establish that a community is unsafe.
+**Incident-based crime statistics, by detailed violations, police services in Ontario**
 
-The dashboard supports exploratory analysis and evidence-based planning. It should not automate law-enforcement decisions, label communities, or replace local knowledge and further investigation.
+Used for detailed Ontario police-service and community-level analysis. [View the Statistics Canada source](https://www150.statcan.gc.ca/n1/en/catalogue/35100180).
+
+### Statistics Canada Table 35-10-0177-01
+
+**Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police**
+
+Used for broader provincial and regional benchmarking. [View the Statistics Canada source](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701).
+
+The completed dashboard focuses on the 1998–2024 historical period used for the project. Statistics Canada source tables may subsequently contain newer annual observations.
+
+### Responsible use
+
+These historical police-reported statistics should be interpreted within geographic, demographic, reporting, and policy context. A higher recorded crime rate alone does not explain why crime occurs or determine whether a community is safe or unsafe.
+
+Hotspot and trend indicators are analytical prioritization signals for exploratory analysis and evidence-based planning. The dashboard does not automate policing or enforcement decisions and should not replace local knowledge or further investigation.
 
 ## Technology stack
 
@@ -116,7 +132,7 @@ The dashboard supports exploratory analysis and evidence-based planning. It shou
 | Data modelling | Semantic relationships and reusable measures |
 | VS Code | Inspection and management of the extracted PBIX repository |
 | Git / GitHub | Version control, repository hygiene, and portfolio publication |
-| OpenAI Codex | AI-assisted repository audit, documentation, and portfolio preparation |
+| OpenAI Codex | AI-assisted repository audit, validation, documentation, and portfolio preparation |
 
 ## Development and repository workflow
 
@@ -166,9 +182,9 @@ The [repository audit](docs/REPOSITORY_AUDIT.md) documents publication-readiness
 
 `Business Intelligence` · `Data Analysis` · `Data Visualization` · `GIS Analysis`
 
-`KPI Development` · `Trend Analysis` · `Regional Benchmarking` · `Data Storytelling`
+`KPI Development` · `Trend Analysis` · `Regional Benchmarking` · `Hotspot Analysis`
 
-`Git` · `GitHub`
+`Interactive Dashboard Design` · `Data Storytelling` · `VS Code` · `Git` · `GitHub`
 
 ## Project context
 

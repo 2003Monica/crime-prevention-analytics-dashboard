@@ -172,4 +172,4 @@ The [repository audit](docs/REPOSITORY_AUDIT.md) documents publication-readiness
 
 ## Project context
 
-This Ontario crime-prevention analytics portfolio project and academic capstone focuses on evidence-based historical analysis. It is not an official Government of Ontario system, a deployed policing application, or evidence of government endorsement. VS Code and Codex were used as part of the repository engineering and documentation workflow while preserving the original Power BI report logic.
+This Ontario crime-prevention analytics project was completed as an academic capstone focused on evidence-based historical analysis. It is not an official Government of Ontario system, a deployed policing application, or evidence of government endorsement. VS Code and Codex were used as part of the repository engineering and documentation workflow while preserving the original Power BI report logic.
